@@ -10,6 +10,7 @@ do
         exit 1
     else                                
         /thunder/bin/readkey sn | grep "data:" | awk -F " " '{print $NF}' | xargs /thunder/bin/miner_32/explore_node &
+        echo "explore_node start to run"
         exit 0
     fi
 done
